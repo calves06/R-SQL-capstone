@@ -1,5 +1,6 @@
 # extracts species and weights for a given year from portal rodent 
 # database; makes a fancy plot and saves the plot to a file
+# install packages!
 
 library(RSQLite)
 library(ggplot2)
@@ -12,7 +13,7 @@ if (length(args)==0) {
   year <- args[1]
 }
 
-print(paste("Getting data for year",year))
+print(paste("Getting data for year",year)) #this is helpful w/ queries below.
 
 # create a connection to the database
 # 
